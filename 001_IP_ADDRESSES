@@ -19,6 +19,9 @@ all these record 0's and 1's as a language: example:
 128:  64:  32:  16:  8:  4:  2:  1:
 0      0    0    0    0  1   1   1         =   7.
 
+128:  64:  32:  16:  8:  4:  2:  1:
+1      1    1    1    1  1   1   1         =   255.
+
 NAT - network address translation
   NAT and subnetting allow for multiple subnetworks within a local network.
   this extends the use of networks to temporarily get past the IPV4 issue.
@@ -28,5 +31,8 @@ COMMANDS FOR FINDING YOUR IP ADDRESS:
 
   LINUX:  ipconfig
 
-128:  64:  32:  16:  8:  4:  2:  1:
-1      1    1    1    1  1   1   1         =   255.
+READ: 
+  https://en.wikipedia.org/wiki/IP_address
+  https://en.wikipedia.org/wiki/Internet_Protocol_version_4
+  https://en.wikipedia.org/wiki/IPv6
+  
