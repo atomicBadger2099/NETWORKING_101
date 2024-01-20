@@ -1,0 +1,13 @@
+IP APPRESSES
+
+
+Ip addresses are network address assignments. They are considered to reside
+on layer 3 of the OSI model, the network layer. They take place throuth
+the router of your network.
+
+It is effectivelythe address you have on the network you have.
+
+different classes of IP addresses exist:
+  class A: giant institutions/corporations networks
+  class B: medium sized institutions  networks
+  class C: household or small business networks
