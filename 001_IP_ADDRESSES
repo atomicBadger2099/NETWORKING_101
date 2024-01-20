@@ -1,13 +1,32 @@
-IP APPRESSES
+IP APPRESSES:NOTES
 
 
 Ip addresses are network address assignments. They are considered to reside
 on layer 3 of the OSI model, the network layer. They take place throuth
-the router of your network.
-
-It is effectivelythe address you have on the network you have.
+the router of your network. It is effectively the address you have on the network.
 
 different classes of IP addresses exist:
   class A: giant institutions/corporations networks
   class B: medium sized institutions  networks
   class C: household or small business networks
+
+IP addresses can be translated to IPV6/IPV4 addressing.
+  IPV$ is the old method. We ran out of these. It was 32 bit.
+  IPV6 is the new method used to accomodate more addresses. It is 128-bit.
+
+all these record 0's and 1's as a language: example:
+
+128:  64:  32:  16:  8:  4:  2:  1:
+0      0    0    0    0  1   1   1         =   7.
+
+NAT - network address translation
+  NAT and subnetting allow for multiple subnetworks within a local network.
+  this extends the use of networks to temporarily get past the IPV4 issue.
+
+COMMANDS FOR FINDING YOUR IP ADDRESS:
+  POWERSHELL:  Get-NetIPConfiguration; Get-NetIPAddress | Format-List
+
+  LINUX:  ipconfig
+
+128:  64:  32:  16:  8:  4:  2:  1:
+1      1    1    1    1  1   1   1         =   255.
