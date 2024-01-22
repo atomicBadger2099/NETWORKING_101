@@ -12,6 +12,10 @@ mac addressess relate how a device relates to a local switch.
 mac addresses are hard coded into a device.
 mac addresses are manufacturer determined.
 
+parts of a mac address:
+  first 6 characters:  the block ID is the device manufacturer
+  2nd 6 characters:    the device model and manufacturer's date
+
 Finding your mac address on a local network:
   powershell:
     Get-NetAdapter
