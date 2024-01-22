@@ -12,4 +12,16 @@ mac addressess relate how a device relates to a local switch.
 mac addresses are hard coded into a device.
 mac addresses are manufacturer determined.
 
+Finding your mac address on a local network:
+  powershell:
+    Get-NetAdapter
+    Get-Command Get-NetAdapter
+    Get-Help Get-Netadapter -examples
+
+  linux:
+    if config //(ethernet)
+    man ifconfig
+    iwconfig //(wireless)
+    man iwconfig
+
 
