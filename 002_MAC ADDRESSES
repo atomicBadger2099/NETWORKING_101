@@ -17,6 +17,7 @@ parts of a mac address:
   2nd 6 characters:    the device model and manufacturer's date
 
 Finding your mac address on a local network:
+
   powershell:
     Get-NetAdapter
     Get-Command Get-NetAdapter
