@@ -8,3 +8,8 @@ source:
 a mac address is a unique identifier of a device on a local network.
 mac addressess are on level 2 of the OSI model
 mac addressess relate how a device relates to a local switch.
+
+mac addresses are hard coded into a device.
+mac addresses are manufacturer determined.
+
+
