@@ -1,0 +1,66 @@
+THE OSI NETWORKING MODEL:
+
+sources: https://en.wikipedia.org/wiki/OSI_model and related links
+         https://www.udemy.com/course/comptia-networkplus-certification/learn/lecture/41500250?start=45#overview
+
+
+SOME BASIC DEFINITIONS:
+
+ETHERNET FRAMES- protocol data unit that runs through the layers of the OSI model in differing pieces
+MAC ADDRESS- an address identifier physically burned into every network card
+IP ADDRESS- internet address on the network
+PORTS AND PORT NUMBERS - deliver data from IP ADDRESSES to computer applications 
+API- application programming interface
+SESSION- interactive exchange between two internet devices over a network
+
+
+LAYERS:
+
+7: APPLICATION LAYER:
+   -APIs live here, creating environments for application function
+   - where data interacts with the local computer application
+
+6: PRESENTATION LAYER:
+   -encryption, translation, and comprehension of the data by the system happen here.
+   -used to be vital to convert document types
+   -now important for encryption
+
+5: SESSION LAYER:
+   -makes the actual connection to the remote host
+   -connects from internet to a web or email server, a database, ect.
+       (the endpoints of the data transaction, where its held on other end)
+   -uses PORT NUMBERS to get data from the IP ADDRESS to the right application in exchange.
+   -uses SOURCE and DESTINATION PORT NUMBERS from the ETHERNET FRAME todeliver to the application points.
+
+4: TRANSPORT LAYER:
+   -job is to assemble and disassemble data pieces as they a rrice
+   -data "train station"
+   -data arrives in pieces, not whole amounts
+   -data can only arrive in 1500 byte max chunks; if larger, ships in pieces of that size.
+
+3: NETWORK LAYER:
+   -IP ADDRESSING happens here.
+   -MAC ADDRESSES are not sufficient for sending data across the internet.
+       (IP ADDRESSES do this instead)
+   -the ETHERNET FRAME, stripped down to an IP PACKET, contains source and 
+       destination IP ADDRESSES.These are recognized and removed from the 
+       Ethernet frame/IP packet, then sent upward to the next layer if it passes.
+
+2: DATA LINK LAYER:
+   -transfer between data nodes on a local network.
+   -the Ethernet protocol happens here.
+   -makes sure Ethernet frames reach the right place
+   -determines proper location based on the MAC address
+   -after MAC ADDRESS is removed, the Ethernet frame is now known as an IP PACKET.
+       (the source MAC ADDRESS is kept for future return sending)
+
+1: PHYSICAL LAYER:
+   -physical connection between devices.
+   -Bit and symbol are on layer 1.
+   -job is to make sure 1's and 0's travel between different hosts.
+   -wires, frequency, ect.
+   -layer 1 catches the entire Ethernet frame as it comes in.
+   -layer 1 recognizws the preamble on the Ethernet frame, removes it, 
+        and sends it up to the next layer.
+   -also layer 1 recognizes and removes the frame check sequence from the Ethernet frame.
+       (destination MAC ADDRESS is part of the Ethernet frame - gets removed)
